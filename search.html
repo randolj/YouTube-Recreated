@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube At Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="search-icon">YouTube At Home</div>
+    </header>
+
+    <main>
+      <h2>Search results:</h2>
+
+      <!-- Display the search query from the URL -->
+      <p>
+        Here are your search results for:
+        <span id="search-query"></span>
+      </p>
+
+      <!-- You can display the search results here -->
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Custom YouTube. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Extract and display the search query from the URL
+      const urlParams = new URLSearchParams(window.location.search)
+      const query = urlParams.get('query')
+      const searchQueryElement = document.querySelector('#search-query')
+      searchQueryElement.textContent = query
+    </script>
+  </body>
+</html>

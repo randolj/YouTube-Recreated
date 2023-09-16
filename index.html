@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube At Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">YouTube At Home</div>
+      <input
+        type="text"
+        class="search-bar"
+        id="search-bar"
+        placeholder="Search"
+      />
+
+      <a href="search.html" id="search-link">
+        <button class="search-btn">Search</button>
+      </a>
+    </header>
+
+    <main>
+      <div class="video-grid">
+        <!-- Add your custom video elements here -->
+        <div class="video-card">
+          <img src="video_thumbnail.jpg" alt="Video Thumbnail" />
+          <h3 class="video-title">Video Title</h3>
+          <p class="video-channel">Channel Name</p>
+        </div>
+        <!-- Add more video cards here -->
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Custom YouTube. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Function to perform the search action
+      function performSearch() {
+        const searchQuery = searchBar.value
+        const searchLink = document.querySelector('#search-link')
+        searchLink.href = `search.html?query=${encodeURIComponent(searchQuery)}`
+      }
+
+      // Add an event listener to the "Search" button
+      const searchButton = document.querySelector('.search-btn')
+      const searchBar = document.querySelector('#search-bar')
+      searchButton.addEventListener('click', performSearch)
+
+      // Add an event listener for the Enter key press
+      searchBar.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+          event.preventDefault() // Prevent the default form submission
+          performSearch() // Call the performSearch function
+        }
+      })
+    </script>
+  </body>
+</html>
