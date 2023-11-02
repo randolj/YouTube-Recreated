@@ -10,3 +10,4 @@ I decided to tackle this not only to learn web development, but I wanted to make
 This is the eventual goal.
 
 Here is what it looks like:
+![Homepage screenshot](images/home-SS.png)

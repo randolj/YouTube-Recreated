@@ -59,6 +59,7 @@ body {
   }
   
   main {
+    flex: 1;
     padding: 20px;
   }
   
@@ -97,3 +98,23 @@ body {
     color: #fff;
   }
   
+  /* Set a minimum height for the container to fill the viewport */
+.container {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Push the footer to the bottom */
+.container::after {
+  content: "";
+  flex: 1;
+}
+
+/* Style your footer as needed */
+footer {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
