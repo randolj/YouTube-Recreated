@@ -12,3 +12,9 @@ This is the eventual goal.
 Here is what it looks like:
 
 ![Homepage screenshot](images/home-SS.png)
+
+
+TODO: 
+1. Add examples to the video cards
+2. Add an image logo
+3. Work on adding icons to the sides
