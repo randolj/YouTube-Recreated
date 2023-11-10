@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(55, 53, 53);
+    background-color: rgba(15,15,15,255);
+    color: rgb(84, 83, 83);
   }
   
   header {
@@ -46,13 +47,16 @@ body {
     border-radius: 20px 0 0 20px;
     width: 300px;
     height: 25px;
+    background-color: rgba(15,15,15,255);
+    border: 1px solid rgb(84, 83, 83);
+    color: rgb(84, 83, 83);
   }
   
   .search-btn {
     padding: 8px 10px 10px;
     font-size: 16px;
-    background-color: rgb(55, 53, 53);
-    color: white;
+    background-color: rgba(15,15,15,255);
+    color: rgb(84, 83, 83);
     border: 1px solid rgb(84, 83, 83);
     cursor: pointer;
     border-radius: 0 20px 20px 0;
@@ -70,15 +74,16 @@ body {
   }
   
   .video-card {
-    border: 1px solid #ddd;
+    border: 1px solid rgba(15,15,15,255);
     padding: 10px;
-    text-align: center;
+    text-align: left;
   }
   
   .video-card img {
     width: 100%;
-    max-height: 150px;
+    max-height: 200px;
     object-fit: cover;
+    border-radius: 20px;
   }
   
   .video-title {
@@ -92,7 +97,7 @@ body {
   }
   
   footer {
-    background-color: #f00; /* You can choose a different color for the footer */
+    background-color: #d40a00; /* You can choose a different color for the footer */
     padding: 10px;
     text-align: center;
     color: #fff;
@@ -113,7 +118,7 @@ body {
 
 /* Style your footer as needed */
 footer {
-  background-color: red;
+  background-color: #d40a00;
   color: white;
   text-align: center;
   padding: 10px;
