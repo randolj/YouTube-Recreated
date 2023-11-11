@@ -58,7 +58,7 @@ body {
     padding: 5px;
     font-size: 16px;
     border-radius: 20px 0 0 20px;
-    width: 600px;
+    width: 400px;
     height: 25px;
     background-color: rgba(15,15,15,255);
     border: 1px solid rgb(84, 83, 83);
@@ -68,11 +68,12 @@ body {
   .search-btn {
     padding: 8px 10px 10px;
     font-size: 16px;
-    background-color: rgba(15,15,15,255);
+    background-color: rgba(58,58,58,255);
     color: white;
     border: 1px solid rgb(84, 83, 83);
     cursor: pointer;
     border-radius: 0 20px 20px 0;
+    height: 37px;
   }
   
   main {
@@ -136,4 +137,8 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
+}
+
+h2, p {
+  color: white;
 }
